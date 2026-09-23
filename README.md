@@ -1,21 +1,17 @@
 # Atlas Veterinario
 
-Biblioteca visual em espanhol com seis materiais de estudo para medicina veterinária. O projeto contém leitura digital, quiz interativo, exercícios SOAP e os seis PDFs para download.
+Página de apresentação dos seis e-books veterinários em espanhol para o projeto Olá Vet. Os arquivos PDF são entregues na Hotmart e não são servidos publicamente pelo site.
 
-## Rodar localmente
+## Desenvolvimento
 
 ```bash
 npm install
 npm run dev
+npm run build
 ```
 
-Para gerar a versão estática: `npm run build`.
+## Finalizar a venda
 
-## Conteúdo
+Em `src/main.jsx`, preencher `checkout.esencial` e `checkout.profesional` com os dois links de pagamento da Hotmart. Até isso acontecer, a página mostra “Acceso en preparación”. Os preços não foram inseridos porque ainda não foram informados.
 
-- `src/content.json`: conteúdo estruturado dos seis materiais.
-- `src/main.jsx` e `src/style.css`: biblioteca e leitores responsivos.
-- `public/materiales/`: PDFs finais para download.
-- `scripts/build_materials.py`: fonte editorial e gerador dos PDFs. Para recriar os PDFs, instale `reportlab` e execute `python3 scripts/build_materials.py`.
-
-Os materiais são educativos. A prescrição veterinária deve considerar avaliação clínica, ficha técnica do produto e regras locais.
+As imagens em `public/images` são prévias derivadas dos PDFs finais. Os materiais de saúde animal são educativos e requerem revisão técnica antes da publicação comercial.
